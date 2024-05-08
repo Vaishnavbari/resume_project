@@ -1,0 +1,29 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block maincontent %}
+<div class="col-sm-10  mt-5"> 
+        <div >
+          <div class="text-center"><img src="{% static "/images/im.jpg" %}" alt="" width="250px" height="150px" ></div>
+          <div class="mt-5 text-white">
+            <h1 class="font-weight-bold">
+              Hello
+            </h1>
+            <div class="mx-5">
+              
+              <p class="text-justify " style="line-height:2rem">
+                {{user.description | title}}
+              </p>
+            </div>
+          </div>
+         <div class="text-center">
+          <a href="/contact/" class="btn btn-outline-warning my3 mr-5">Hire me</a>
+          <a href="/contact/" class="btn btn-outline-info my3">Contact</a>
+         </div>
+          </div>
+        </div>
+        </div>
+      
+      </div>
+    </div>
+    {% endblock %}

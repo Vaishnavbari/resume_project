@@ -1,0 +1,47 @@
+
+a.nav-link{
+    color: black;
+}
+a.nav-link:hover {
+  color: black;
+  background-color: #e9cd79;
+}
+a.nav-link.active{
+    color: black;
+    background-color: #ffc107;
+    font-weight: bold;
+  }
+  .main{
+    height: 100vh;
+    width: 100vw;
+  }
+.container-fluid.bg-dark {
+  width: 100vw;
+    height: 100%; 
+}
+
+.border-warning {
+  border-color: #ffc107!important;
+  height: 100%;
+}
+  @media screen and (max-width:666px) {
+
+     .main{
+      height: fit-content;
+    
+     }
+     
+  }
+  
+  @media(min-width:512px) and (max-width:612px) {
+
+    .main{
+     height:100vh;
+     
+    }
+    a{
+       height: fit-content;
+    }
+    
+ }
+ 

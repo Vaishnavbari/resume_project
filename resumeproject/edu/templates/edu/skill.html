@@ -1,0 +1,21 @@
+{% extends "app/base.html" %}
+{% block maincontent %}
+<div class="col-sm-10  mt-5">
+    <h1 class="text-warning mb-5 border-bottom">
+      SKILLS
+    </h1>
+    
+    <div class="row text-white">
+        {% for user in user %}
+    {% if user %}
+        <div class="col-sm-5 ">
+            <h3 class="mt-5">{{user.language}}</h3>
+            <div class="progress">
+                <div class="progress-bar  progress-bar-striped progress-bar-animated" role="progressbar" style="width:{{user.percentage}}%" aria-valuenow="{{user.percentage}}" aria-valuemin="0" aria-valuemax="100">{{user.percentage}}</div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+        
+{% endblock %}
